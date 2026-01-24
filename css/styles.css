@@ -1,0 +1,205 @@
+/* =====================
+   Base
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #111827;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  color: #6b7280;
+}
+
+.navbar {
+  box-shadow: 0 4px 20px rgba(184, 180, 188, 0.25);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 22px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+  z-index: 1000;
+}
+.navbar h3 {
+  color: #ffffff;
+}
+
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffc800;
+}
+
+
+.hero {
+  height: 100vh;
+  background: url("../assets/img/about/1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+
+.hero h1 {
+  font-size: 3.8rem;
+  max-width: 800px;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: #f3f4f6;
+}
+
+
+.btn {
+  padding: 14px 32px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.service {
+  border: none;
+  background: transparent;
+}
+
+.service h3 {
+  margin-top: 20px;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+
+/* =====================
+   Portfolio
+===================== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+/* =====================
+   Contact
+===================== */
+.contact {
+  background: #f9fafb;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+}
+h2 {
+  margin-bottom: 40px;
+  color: #021131;
+}
+
+h3 {
+  color: #1f2937;
+}
+
+a {
+  color: #2563eb;
+}
+section {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+section > p {
+  max-width: 600px;
+  margin: -20px auto 60px;
+}
