@@ -203,3 +203,28 @@ section > p {
   max-width: 600px;
   margin: -20px auto 60px;
 }
+/* ===================== 
+   Collection
+===================== */
+
+#collection {
+  background: #f3f4f6;
+}
+
+#collection .project {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+#collection .project p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #111827;
+}
+
+#collection .project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
