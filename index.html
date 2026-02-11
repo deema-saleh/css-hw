@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <!-- Responsive Navbar -->
   <nav class="navbar">
     <h3>Deema</h3>
-     <ul>
-    <li><a href="#services">SERVICES</a></li>
-    <li><a href="#portfolio">PORTFOLIO</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#team" class="active">TEAM</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-  </ul>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#team" class="active">TEAM</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section class="hero" id="home">
     <div>
       <h1>Hi, I’m Deema 👋<br>Frontend Developer</h1>
@@ -27,7 +34,7 @@
     </div>
   </section>
 
- 
+  <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
     <div class="services-grid">
@@ -46,42 +53,39 @@
     </div>
   </section>
 
- 
+  <!-- Portfolio Section -->
   <section id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="portfolio-grid">
-    <div class="project">
-      <img src="4.jpg" alt="Project 1">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="project">
+        <img src="4.jpg" alt="Project 1">
+      </div>
+      <div class="project">
+        <img src="6.jpg" alt="Project 2">
+      </div>
     </div>
-    <div class="project">
-      <img src="6.jpg" alt="Project 2">
+  </section>
+
+  <!-- Collection Section -->
+  <section id="collection">
+    <h2>Collection</h2>
+    <div class="portfolio-grid">
+      <div class="project">
+        <img src="4.jpg" alt="Item 1">
+        <p>Java course - $120</p>
+      </div>
+      <div class="project">
+        <img src="6.jpg" alt="Item 2">
+        <p>Python course - $85</p>
+      </div>
+      <div class="project">
+        <img src="4.jpg" alt="Item 3">
+        <p>HTML course - $45</p>
+      </div>
     </div>
-  </div>
-</section>
-<!-- header section -->
-<section id="collection">
-  <h2>Collection</h2>
-  <div class="portfolio-grid">
+  </section>
 
-    <div class="project">
-      <img src="4.jpg" alt="Item 1">
-      <p>java course - $120</p>
-    </div>
-
-    <div class="project">
-      <img src="6.jpg" alt="Item 2">
-      <p>python course - $85</p>
-    </div>
-
-    <div class="project">
-      <img src="4.jpg" alt="Item 3">
-      <p>html course - $45</p>
-    </div>
-
-  </div>
-</section>
-
-
+  <!-- Contact Section -->
   <section class="contact" id="contact">
     <h2>Contact</h2>
     <form>
@@ -92,9 +96,20 @@
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2026 Deema. All rights reserved.
   </footer>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
 
 </body>
 </html>
